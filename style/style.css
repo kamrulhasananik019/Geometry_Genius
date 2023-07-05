@@ -1,0 +1,58 @@
+.custom-font {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    color: rgba(17, 17, 17, 0.8);
+}
+
+.custom-font-2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    color: rgba(17, 17, 17, 0.6);
+}
+
+.custom-font-3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.cards-w {
+    width: 437px;
+}
+
+.custom-font-4 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #414141;
+}
+
+.custom-font-5 {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #414141;
+}
+
+.custom-font-6 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgba(17, 17, 17, 0.8);
+}
+
+.custom-font-7 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: rgba(17, 17, 17, 0.8);
+    text-decoration: underline solid rgba(17, 17, 17, 0.8);
+}

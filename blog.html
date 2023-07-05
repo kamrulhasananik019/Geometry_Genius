@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header class="p-4 ">
+        <nav class="navbar bg-info-subtle bg-opacity-10 ">
+            <div class="container-fluid ">
+                <p class="fs-1 ">Blog</p>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <section class="container mt-5 text-center">
+            <h2>Frequently Asked Any Questions</h2>
+            <p class="w-75 m-auto">As you can see, FAQ questions are essential for any organization, and if you want to know how to do FAQ and build the content of the list of FAQ question</p>
+
+            <div class=" my-4 ">
+                <div class="accordion " id="accordionExample">
+
+
+                    <div class="accordion-item my-5 bg-info-subtle bg-opacity-10">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button bg-info-subtle bg-opacity-10" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h5>1.What is dom ? And what is the purpose of dom ?</h5>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-start">
+                                <p> <strong>1.
+                                        <code class="fs-5">Dom</code> full form is Document Object Model  a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document.</strong></p>
+                                <p> 2. <code class="fs-5">Dom</code> helps us to accessing and manipulating the content, structure, and style of a web page. We can change the text, styling, or layout of a web page in response to user input or other events
+                                    using <code class="fs-5">Dom</code> and also Modifying the content and structure of a web page dynamically in response to user actions or other events. Validating web pages and fixing errors in the markup. Creating
+                                    interactive and dynamic user interfaces using client-side scripting.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="accordion-item my-5  bg-info-subtle bg-opacity-10">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed  bg-info-subtle bg-opacity-10" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <h5>2.how to get element using dom ?</h5>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-start">
+                                <p>
+                                    <span>1.</span>If you wants to use dom in your WebSite you can use
+                                    <code class="fs-5"> `document`</code>. There are few commonly used methods to get element.
+                                    <br> <strong>Examples:</strong>
+                                </p>
+                                <p> <code class="fs-6">1.const element = document.getElementById("element");</code>
+                                </p>
+                                <p> <code class="fs-6">2.const element = document.querySelector("HTML-Tag");</code>
+                                </p>
+                                <p> <code class="fs-6">3.document.getElementsByClassName("");</code>
+                                </p>
+                                <p> <code class="fs-6">4.document.getElementsByName("");</code>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item my-5  bg-info-subtle bg-opacity-10">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed  bg-info-subtle bg-opacity-10" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <h5>3.what is event bubble ?</h5>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-start">
+                                <p>1.Event bubble is javascript element.That is triggered on an element is also triggered on all of that element's parent elements, in order from the innermost to the outermost parent. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item my-5  bg-info-subtle bg-opacity-10">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed  bg-info-subtle bg-opacity-10" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <h5>4.what is called back function ? and how its work ?</h5>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-start">
+                                <p>1.In Javascript callBack function use to pass a parameter to another function and then call it back after the task is completed.</p>
+                                <p>2.The function that receives the callback argument will typically perform some operation and then call the callback function to provide a result or perform some additional action.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

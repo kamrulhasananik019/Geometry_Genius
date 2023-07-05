@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="p-5">
+        <!-- >>>>>>>>>>>> NAV BAR <<<<<<<<<<< -->
+        <nav class="navbar navbar-expand-lg bg-danger bg-info-subtle bg-opacity-10">
+            <div class="container-fluid">
+                <div class="p-3">
+                    <h1 class="custom-font">Interactive</h1>
+                    <h3 class="custom-font-2">Geometry Genius</h3>
+                </div>
+            </div>
+            <a href="blog.html">
+                <button class="btn btn-primary btn-lg custom-font-3 m-5">
+                Blog
+                </button></a>
+        </nav>
+    </header>
+    <main>
+
+        <section class="container-fluid mx-auto ">
+            <div class="row ">
+
+                <!-- This is Cards Section -->
+                <div class="col-md-9 col-lg-9">
+                    <div class="row  gap-4 justify-content-center text-center">
+
+                        <!-- This is Triangle Section-->
+                        <div class="col-12 col-md-6 col-lg-3  border    rounded-3" id="bg-content-1">
+                            <img class="pt-5 img-fluid" src="images/triangle.png" alt="">
+                            <h2 class="pt-5 custom-font-4">Triangle</h2>
+                            <p class="custom-font-5">Area (A) = 0.5 x <span id="show-triangle-b">b</span> x <span id="show-triangle-h">h</span></p>
+                            <div class="mt-4 mb-4">
+                                <input class="w-25" type="text" placeholder="b" id="triangle-b">
+                                <span class="custom-font-5">cm</span>
+                                <input class="w-25" type="text" placeholder="h" id="triangle-h">
+                                <span class="custom-font-5">cm</span> </div>
+                            <button type="button" id="triangle-btn" class="btn btn-primary btn-lg my-4 w-75 ">Calculate</button>
+                        </div>
+
+                        <!-- This is Rectangle Section-->
+                        <div class="col-12 col-md-6 col-lg-3  border    rounded-3 " id="bg-content-2">
+                            <img class="pt-5 img-fluid" src="images/rectangle.png" alt="">
+                            <h2 class="pt-5 custom-font-4">Rectangle</h2>
+                            <p class="custom-font-5">Area (A) = <span id="show-rectangle-w">w</span> x <span id="show-rectangle-l">l</span></p>
+                            <div class="mt-4 mb-4"> <input class="w-25" type="text" placeholder="w" id="rectangle-w"> <span class="custom-font-5">cm</span>
+                                <input class="w-25" type="text" placeholder="l" id="rectangle-l"> <span class="custom-font-5">cm</span> </div>
+                            <button type="button" class="btn btn-primary btn-lg my-4 w-75" id="rectangle-btn">Calculate</button>
+                        </div>
+
+                        <!-- This is Parallelogram Section-->
+                        <div class="col-12 col-md-6 col-lg-3  border    rounded-3" id="bg-content-3">
+                            <img class="pt-5 img-fluid" src="images/parallelogram.png" alt="">
+                            <h2 class="pt-5 custom-font-4">Parallelogram</h2>
+                            <p class="custom-font-5 my-4">Area (A) =
+                                <span id="show-parallelogram-b">b</span> x <span id="show-parallelogram-h">h</span> </p>
+                            <!-- <p class="custom-font-6">b=10cm, h=12cm</p> -->
+                            <div class="mt-4 mb-4"> <input class="w-25" type="text" placeholder="b" id="parallelogram-b"> <span class="custom-font-5">cm</span>
+                                <input class="w-25" type="text" placeholder="h" id="parallelogram-h"> <span class="custom-font-5">cm</span> </div>
+                            <button type="button" class="btn btn-primary btn-lg my-4 w-75" id="parallelogram-btn">Calculate</button>
+                        </div>
+
+                        <!-- This is Rhombus Section-->
+                        <div class="col-12 col-md-6 col-lg-3  border    rounded-3" id="bg-content-4">
+                            <img class="pt-5 img-fluid" src="images/rhombus.png" alt="">
+                            <h2 class="pt-5 custom-font-4">Rhombus</h2>
+                            <p class="custom-font-5 my-4">Area (A) = 0.5 x <span id="show-rhombus-d1">d1</span> x <span id="show-rhombus-d2">d2</span></p>
+                            <!-- <p>d1<span class="custom-font-6"> = 16cm</span> <span class="ps-2"> d2<span class="custom-font-6"> = 8cm</span></p>
+                            </span> -->
+                            <div class="mt-4 mb-4"> <input class="w-25" type="text" placeholder="d1" id="rhombus-d1"> <span class="custom-font-5">cm</span>
+                                <input class="w-25" type="text" placeholder="d2" id="rhombus-d2"> <span class="custom-font-5">cm</span> </div>
+                            <button type="button" class="btn btn-primary btn-lg my-4 w-75" id="rhombus-btn">Calculate</button>
+                        </div>
+
+                        <!-- This is Pentagon Section-->
+                        <div class="col-12 col-md-6 col-lg-3  border    rounded-3" id="bg-content-5">
+                            <img class="pt-5 img-fluid" src="images/pentagon.png" alt="">
+                            <h2 class="pt-5 custom-font-4">Pentagon</h2>
+                            <p class="custom-font-5 my-4">Area (A) = 0.5 x <span id="show-pentagon-p">p </span> x
+                                <span id="show-pentagon-b">b</span> </p>
+                            <!-- <p class="custom-font-6">p = 6cm, b = 10cm</p> -->
+                            <div class="mt-4 mb-4"> <input class="w-25" type="text" placeholder="p" id="pentagon-p"> <span class="custom-font-5">cm</span>
+                                <input class="w-25" type="text" placeholder="b" id="pentagon-b"> <span class="custom-font-5">cm</span> </div>
+                            <button type="button" class="btn btn-primary btn-lg my-4 w-75" id="pentagon-btn">Calculate</button>
+                        </div>
+
+                        <!-- This is Ellipse Section-->
+                        <div class="col-12 col-md-6 col-lg-3  border    rounded-3" id="bg-content-6">
+                            <img class="pt-5 img-fluid" src="images/ellipse.png" alt="">
+                            <h2 class="pt-5 custom-font-4">Ellipse</h2>
+                            <p class="custom-font-5 my-4">Area (A) = π<span id="show-ellipse-a">a</span><span id="show-ellipse-b">b</span></p>
+                            <!-- <p class="custom-font-6">a = 10cm, b = 4cm</p> -->
+                            <div class="mt-4 mb-4"> <input class="w-25" type="text" placeholder="a" id="ellipse-a"> <span class="custom-font-5">cm</span>
+                                <input class="w-25" type="text" placeholder="b" id="ellipse-b"> <span class="custom-font-5">cm</span> </div>
+                            <button type="button" class="btn btn-primary btn-lg my-4 w-75" id="ellipse-btn">Calculate</button>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- This is Result section -->
+                <div class="col-md-3 col-lg-3 text-center pe-5">
+                    <div class=" border rounded-3">
+                        <p class="text-center custom-font-7 mt-4">Area Calculation</p>
+                        <div class="row mt-4">
+                            <div class="col-4">
+                                <p class="custom-font-5">1. Triangle</p>
+                            </div>
+                            <div class="col-4">
+                                <p class="custom-font-5"><span id="triangle-total"></span> cm²</p>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-primary btn-sm">Convert to m²</button>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-4">
+                                <p class="custom-font-5 pe-2">2. rectangle</p>
+                            </div>
+                            <div class="col-4">
+                                <p class="custom-font-5"><span id="rectangle-total"></span> cm²</p>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-primary btn-sm">Convert to m²</button>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-4">
+                                <p class="custom-font-5 pe-2" style="white-space: nowrap;">3. parallelogram</p>
+                            </div>
+                            <div class="col-4">
+                                <p class="custom-font-5"><span id="parallelogram-total"></span> cm²</p>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-primary btn-sm">Convert to m²</button>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-4">
+                                <p class="custom-font-5 pe-2">4. rhombus</p>
+                            </div>
+                            <div class="col-4">
+                                <p class="custom-font-5"><span id="rhombus-total"></span> cm²</p>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-primary btn-sm">Convert to m²</button>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-4">
+                                <p class="custom-font-5 pe-2">5. pentagon</p>
+                            </div>
+                            <div class="col-4">
+                                <p class="custom-font-5"><span id="pentagon-total"></span> cm²</p>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-primary btn-sm">Convert to m²</button>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-4">
+                                <p class="custom-font-5 pe-2">6. ellipse</p>
+                            </div>
+                            <div class="col-4">
+                                <p class="custom-font-5"><span id="ellipse-total"></span> cm²</p>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-primary btn-sm">Convert to m²</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="js/random.js"></script>
+    <script src="js/app.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
